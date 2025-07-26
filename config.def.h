@@ -5,12 +5,12 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "DejaVu Sans Mono:size=12:antialias=true:autohint=true";
 
 /* disable bold, italic and roman fonts globally */
-int disablebold = 0;
-int disableitalic = 0;
-int disableroman = 0;
+int disablebold = 1;
+int disableitalic = 1;
+int disableroman = 1;
 
 static int borderpx = 2;
 
@@ -114,7 +114,7 @@ typedef struct {
 static const ColorScheme schemes[] = {
 	// st (dark)
 	{{"black", "red3", "green3", "yellow3",
-	  "blue2", "magenta3", "cyan3", "gray90",
+	  "cyan3", "magenta3", "cyan3", "gray90",
 	  "gray50", "red", "green", "yellow",
 	  "#5c5cff", "magenta", "cyan", "white",
 	  [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
